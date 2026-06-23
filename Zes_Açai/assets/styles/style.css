@@ -156,23 +156,26 @@ section {
 
 .card-produto {
     background-color: #fff;
-    box-shadow: 8px 8px 16px rebeccapurple,
-                -8px -8px 16px violet;
+    /* box-shadow: 4px 4px 8px rebeccapurple,
+                -4px -4px 8px violet; */
+    border: 1px solid #e0d4f0;
     border-radius: 20px;
     padding: 20px 35px;
-    text-align: center; 
+    text-align: center;
+    transition: transform 0.3s;
 }
 
 .card-produto:hover {
-    box-shadow: 8px 8px 16px violet,
-    -8px -8px 16px rebeccapurple;
+    box-shadow: 4px 4px 8px violet,
+                -4px -4px 8px rebeccapurple;
+    transform: translateY(-5px);
 }
 
 .preco {
     color: #31023b;
 }
 
-.acai {
+.imagem_acai {
     width: 250px;
     height: auto;
 }
