@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #ffff00 #31023b;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #fff;
+}
+
+header {
+    background-color: #31023b;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 64px;
+    max-width: 1100px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #c8a8e9;
+}
+
+span {
+    color: #ffff00;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 300ms;
+}
+
+.nav-bar ul li a:hover {
+    filter: drop-shadow(0 0 10px #c8a8e9);
+}
+
+.nav-bar ul li a:active {
+
+}
+
+.carrosel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 520px;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    animation: trocaSlides 16s infinite;
+}
+
+.slide:nth-child(1){
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2){
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3){
+    animation-delay: 8s;
+}
+
+.slide:nth-child(4){
+    animation-delay: 12s;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 690px;
+    display: block;
+}
+
+@keyframes trocaSlides {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+section {
+    padding: 64px;
+}
+
+.cardapio-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-cardapio {
+    text-align: center;
+    font-size: 2rem;
+    color: #31023b;
+    margin-bottom: 8px;
+}
+
+.subtitulo-cardapio {
+    text-align: center;
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 48px;
+}
+
+.grade-cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+#cardapio {
+    background-color: #f5f5f5f5;
+}
+
+.card-produto {
+    background-color: #fff;
+    box-shadow: 8px 8px 16px rebeccapurple,
+                -8px -8px 16px violet;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center; 
+}
+
+.card-produto:hover {
+    box-shadow: 8px 8px 16px violet,
+    -8px -8px 16px rebeccapurple;
+}
+
+.preco {
+    color: #31023b;
+}
+
+.acai {
+    width: 250px;
+    height: auto;
+}
