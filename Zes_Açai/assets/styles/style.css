@@ -156,9 +156,8 @@ section {
 
 .card-produto {
     background-color: #fff;
-    /* box-shadow: 4px 4px 8px rebeccapurple,
-                -4px -4px 8px violet; */
-    border: 1px solid #e0d4f0;
+    box-shadow: 4px 4px 8px #bebebe,
+                -4px -4px 8px #ffffff;
     border-radius: 20px;
     padding: 20px 35px;
     text-align: center;
@@ -171,11 +170,36 @@ section {
     transform: translateY(-5px);
 }
 
-.preco {
-    color: #31023b;
+.card-produto:active {
+   
 }
 
 .imagem_acai {
-    width: 250px;
+    object-fit: cover;
+    width: 100%;
     height: auto;
+    display: block;
+}
+
+.info-produto {
+    padding: 20px;
+}
+
+.info-produto h3 {
+    font-size: 1.1rem;
+    color: #31023b;
+    margin-bottom: 14px;
+}
+
+.info-produto P {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.preco {
+    color: #6B3FA0;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
