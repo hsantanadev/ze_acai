@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #ffff00 #31023b;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #fff;
+}
+
+header {
+    background-color: #31023b;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 64px;
+    max-width: 1100px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #c8a8e9;
+}
+
+span {
+    color: #ffff00;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 300ms;
+}
+
+.nav-bar ul li a:hover {
+    filter: drop-shadow(0 0 10px #c8a8e9);
+}
+
+
+.carrosel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    animation: trocaSlides 16s infinite;
+}
+
+.slide:nth-child(1){
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2){
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3){
+    animation-delay: 8s;
+}
+
+.slide:nth-child(4){
+    animation-delay: 12s;
+}
+
+.slide img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes trocaSlides {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+section {
+    padding: 64px;
+}
+
+.cardapio-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-cardapio {
+    text-align: center;
+    font-size: 2rem;
+    color: #31023b;
+    margin-bottom: 8px;
+}
+
+.subtitulo-cardapio {
+    text-align: center;
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 48px;
+}
+
+.grade-cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+#cardapio {
+    background-color: #f5f5f5f5;
+}
+
+.card-produto {
+    background-color: #fff;
+    box-shadow: 4px 4px 8px #bebebe,
+                -4px -4px 8px #ffffff;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card-produto:hover {
+    box-shadow: 4px 4px 8px rebeccapurple,
+                -4px -4px 8px violet;
+    transform: translateY(-5px);
+}
+
+.imagem_acai {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-produto {
+    padding: 20px;
+}
+
+.info-produto h3 {
+    font-size: 1.1rem;
+    color: #31023b;
+    margin-bottom: 14px;
+}
+
+.info-produto p {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.preco {
+    color: #6B3FA0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.secao-diferenciais {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-diferenciais {
+    text-align: center;
+    font-size: 2rem;
+    color: #31023b;
+    margin-bottom: 8px;
+}
+
+.subtitulo-diferenciais {
+    text-align: center;
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 48px;
+}
+
+.grade-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    text-align: center;
+}
+
+.item-diferencial {
+    background-color: #fff;
+    box-shadow: 4px 4px 8px #bebebe,
+                -4px -4px 8px #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.item-diferencial:hover {
+    box-shadow: 4px 4px 8px green,
+                -4px -4px 8px greenyellow;
+    transform: translateY(-5px);
+}
+
+.item-diferencial h3 {
+    font-size: 1.3rem;
+    color: #6B3FA0;
+    margin-bottom: 8px;
+}
+
+span {
+    font-style: normal;
+    transition: all 0.3s;
+}
+
+span:hover {
+    filter: drop-shadow(0 0 10px yellow);
+    cursor: pointer;
+}
+
+.item-diferencial p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+#depoimentos {
+    background-color: #f5f5f5f5;
+    text-align: center;
+    padding: 60px;
+}
+
+#depoimentos h2 {
+    color: #31023b;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.comentarios p {
+    color: #555;
+    font-style: italic;
+    margin: 16px;
+    font-size: 1.06rem;
+}
+
+#contato {
+    background-color: #31023b;
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+    font-size: 1rem;
+}
+
+#contato p {
+    color: #c8a8e9;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer img {
+    width: 22px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.instagram:hover {
+    filter: drop-shadow(0 0 10px pink);
+    color: pink;
+    text-decoration: underline;
+}
+
+.whatsapp:hover {
+    filter: drop-shadow(0 0 10px greenyellow);
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .carrosel {
+        display: none;
+    }
+
+}
