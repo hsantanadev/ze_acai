@@ -10,7 +10,7 @@ Landing page desenvolvida durante um curso de **HTML5** e **CSS3** para praticar
 ## 🚀 Demonstração
 
 🔗 **Acesse o projeto:**  
-https://hsantanadev.github.io/ze_acai/
+https://hsantanadev.github.io/Ze_Acai/
 
 ## ✨ Tecnologias
 
